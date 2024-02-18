@@ -1,4 +1,4 @@
-package br.com.papait.bruno.processCNABjavaapi.domain.service;
+package br.com.papait.bruno.processCNABjavaapi.service;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobParametersBuilder;
@@ -38,7 +38,7 @@ public class CNABService {
 
     var jobParameters = new JobParametersBuilder()
         .addJobParameter("cnab", file.getOriginalFilename(), String.class, true)
-        .addJobParameter("cnabFile", "file:" + targetLocation.toString(), String.class, true)
+        .addJobParameter("cnabFile", "file:" + targetLocation.toString(), String.class, false)
         .toJobParameters();
 
     this.jobLauncher.run(this.job, jobParameters);

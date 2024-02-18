@@ -1,6 +1,6 @@
 package br.com.papait.bruno.processCNABjavaapi.web.controller;
 
-import br.com.papait.bruno.processCNABjavaapi.domain.service.CNABService;
+import br.com.papait.bruno.processCNABjavaapi.service.CNABService;
 import org.springframework.batch.core.JobParametersInvalidException;
 import org.springframework.batch.core.repository.JobExecutionAlreadyRunningException;
 import org.springframework.batch.core.repository.JobInstanceAlreadyCompleteException;

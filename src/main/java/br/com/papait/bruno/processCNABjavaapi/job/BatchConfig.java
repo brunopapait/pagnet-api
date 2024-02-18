@@ -1,7 +1,7 @@
 package br.com.papait.bruno.processCNABjavaapi.job;
 
-import br.com.papait.bruno.processCNABjavaapi.domain.model.Transacao;
-import br.com.papait.bruno.processCNABjavaapi.domain.model.TransacaoCNAB;
+import br.com.papait.bruno.processCNABjavaapi.entity.Transacao;
+import br.com.papait.bruno.processCNABjavaapi.entity.TransacaoCNAB;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.StepScope;

@@ -1,4 +1,4 @@
-package br.com.papait.bruno.processCNABjavaapi.domain.model;
+package br.com.papait.bruno.processCNABjavaapi.entity;
 
 import java.math.BigDecimal;
 import java.sql.Time;
@@ -17,20 +17,6 @@ public record Transacao(
     String donoLoja,
     String nomeLoja
 ) {
-
-  public Transacao withValor(BigDecimal valor) {
-    return new Transacao(
-        this.id(),
-        this.tipo(),
-        this.data(),
-        valor,
-        this.cpf(),
-        this.cartao(),
-        this.hora(),
-        this.donoLoja(),
-        this.nomeLoja()
-    );
-  }
 
   public Transacao withData(String data) throws ParseException {
     var dateFormat = new SimpleDateFormat("yyyyMMdd");

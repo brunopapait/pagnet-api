@@ -1,4 +1,4 @@
-package br.com.papait.bruno.processCNABjavaapi.domain.model;
+package br.com.papait.bruno.processCNABjavaapi.entity;
 
 import java.math.BigDecimal;
 
